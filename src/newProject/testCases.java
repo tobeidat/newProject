@@ -67,6 +67,7 @@ public class testCases {
 		WebElement searchButton = driver
 				.findElement(By.cssSelector(".Button__Btn-sc-xr32du-0.bwtwxz.sc-imAxmJ.gVJtmY"));
 		searchButton.click();
+
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30000));
 		List<WebElement> chaltes = driver.findElements(By.className("btn-medium"));
 		chaltes.get(1).click();
